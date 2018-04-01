@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="https://maps.googleapis.com/maps/api/js?callback=loadGoogleMap" async defer></script>
+</head>
+<body>
+<div style="height:600px;width:600px;" id="googleMap"></div>
+<script>
+function loadGoogleMap() {
+  gooMap = new google.maps.Map(document.getElementById('googleMap'), {
+              mapTypeId: 'hybrid',
+              center: {
+                  lat: 51.6755,
+                  lng: 39.2089}
+          });
+}
+</script>
+</body>
+</html>
